@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="js.js"></script>
+		<link type="text/css" rel="stylesheet" href="style.css" media="all">
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="openModal" class="modalDialog">
+				<div>
+	        		<h2>Add new contact</h2>
+	        		<a href="#close" title="Close" class="close">X</a>
+	        		<input type="text" id ="firstName" placeholder="First Name"/>
+					<input type="text" id="lastName" placeholder="Last Name"/>
+					<input type="text" id="phoneNumber" placeholder="Phone Number"/>
+					<a href="#close" id="addContactButton" class="btn" >Add Contact</a>
+				</div>
+			</div>
+			<div id="contacts">
+				<h1>Contacts</h1>
+				<ul id="contactsContainer"></ul>
+				<a href="#openModal" class="btn">add contact</a>
+			</div>
+			<div id="jsonContainer">
+				<h3>import/export JSON data</h3>
+				<textarea id="contactsJsonContainer"></textarea>
+				<a href="#" id="importContacts" class="btn">Import</a>
+				<a href="#" id="contactsExport" class="btn">Export</a>
+			</div>
+			<div id="eventsContainer">
+				<h3>User Events: </h3>
+				<div id="events"></div>
+			</div>
+
+		</div>
+	</body>
+</html>

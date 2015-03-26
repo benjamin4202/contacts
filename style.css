@@ -1,0 +1,200 @@
+
+body{
+	background:#FFF;
+	font-family: Arial; 
+}
+#wrapper{
+	left:50%; 
+	margin-left:-420px;
+	position:relative;
+	width:800px;
+}
+#addNewContact{
+	display:none;
+}
+#contacts{
+	float:left;
+	height:600px; 
+	width:500px;
+}
+#contacts h1{
+	color:#222;
+	text-align:center; 
+}
+#contacts ul{
+	border: solid 1px #646464;
+	height:600px;
+	margin: 20px 0px 20px 0px;
+	overflow-y:scroll; 
+	overflow-x:hidden; 
+	padding:20px; 
+	width:100%; 
+}
+#contacts ul li{
+	background:#00A388; 
+	border: solid 1px #FFF; 
+	color:#FFF;
+	display:inline-block; 
+	font-weight:bold;
+	height:100px; 
+	margin-bottom:10px; 
+	position:relative; 
+	text-align:center;
+	top:5px;
+	width:100%; 
+}
+#contacts ul li h2{
+	color:#222; 
+	font-weight:bold;
+}
+#jsonContainer{
+	background:#BEEB9F; 
+	float:right; 
+	height:265px;
+	left:20px; 
+	margin:10% 0px 0px 20px;
+	padding:5px;
+	position:relative; 
+	width:250px; 
+}
+#jsonContainer h3{
+	color:#222;
+	font-size:14px; 
+	text-align:center; 
+	text-transform: uppercase; 
+}
+#jsonContainer .btn{
+	margin-left:13px;
+}
+#contactsJsonContainer{
+	height:140px; 
+	margin:0px 0px 20px 7px;
+	width:225px; 
+}
+#eventsContainer{
+	background:#BEEB9F;
+	float:right; 
+	height:305px;
+	left:20px; 
+	overflow-y:scroll;
+	padding:5px;
+	position:relative; 
+	top:50px;
+	width:250px; 	
+}
+#eventsContainer h3{
+	font-size:14px; 
+	text-align:center; 
+	text-transform: uppercase;
+}
+
+#contacts ul li.emptyContacts{
+	background:#FFF; 
+	color:#222;
+}
+.delete{    
+	background: #FF6138;
+	border-radius: 12px;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 25px;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    text-decoration: none;
+    top: 35px;
+    width: 24px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px; 
+}
+/*Webkit Scrollbar Styles (do not apply to firefox or IE - but to Chrome and Safari)*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track:horizontal{
+	display:none;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.btn {
+	background: #FF6138;
+  	color: #ffffff;
+  	font-size: 15px;
+  	padding: 10px 20px 10px 20px;
+  	text-decoration: none;
+  	text-transform:uppercase;
+}
+.btn:hover {
+  opacity:0.8;
+  text-decoration: none;
+}
+.modalDialog {
+	background: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    left: 0;
+    opacity:0;
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: opacity 400ms ease-in;
+    z-index: 99999;
+ 	-moz-transition: opacity 400ms ease-in;
+    -webkit-transition: opacity 400ms ease-in;  
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+	background: #fff;
+	border-radius: 10px;
+	float:left;
+	margin: 10% 0px 0px 30%;
+	padding: 30px;
+	position: relative;
+    width: 450px;
+}
+.modalDialog > div h2{
+	margin:0px 0px 10px 0px;
+}
+.modalDialog > div input{
+	font-size:20px;
+	float:left;
+	height:50px;
+	margin-bottom:10px;
+	padding: 5px;
+	width:98%;
+}
+.modalDialog > div > .btn{
+	float:left;
+	margin:0;
+}
+.close {
+    background: #606061;
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px #000;
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    text-decoration: none;
+    top: -10px;
+    width: 24px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    
+}
+.close:hover {
+    background: #00d9ff;
+}
